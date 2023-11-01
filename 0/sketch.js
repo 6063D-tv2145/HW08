@@ -25,7 +25,7 @@ function draw() {
   mImg.loadPixels();
 
   textAlign(LEFT, TOP);
-  text('shade of blue : ' + blueSlider.value(), 16 + blueSlider.width, 16);
+  text('change blue to green', 16 + blueSlider.width, 16);
   blue = blueSlider.value();
 
 
@@ -64,7 +64,9 @@ function isRed(r, g, b) {
 }
 //function to check red color ratios
 function isYellow(r, g, b) {
-  return r > 140 && g > 130 && b < 110;
+  if (r > 140 && g > 130 && b < 110 || r==173 && g==216){
+  return true;
+  }
 }
 
 function isBlue(r, g, b) {
