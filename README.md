@@ -1,4 +1,3 @@
-# p5.js multi sketch template
+# Mondriaan Painting
 
-By putting different sketch.js and index.html files in directories we can more easily switch between multiple experiments.
-
+1.
